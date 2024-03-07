@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer Using HTML, CSS, JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@400;700&family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+<header>
+    <!-- <h1 align="left">Sorting Visualizer</h1> -->
+    
+    <nav class="navbar navbar-light" style="background-color: #28282B;">
+        <a class="navbar-brand" href="#">
+            <img src="https://banner2.cleanpng.com/20180410/ere/kisspng-industrial-robot-computer-icons-automaton-robotics-5acd65718a8036.8973320615234102895673.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Sorting Visualizer
+          </a>
+        <div class="row">
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark btn-sm newArray">New Array</button>
+            </div>
+            <div class="col" id="input">
+                <span id="size">Size
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </span>
+                <span id="speed">Speed
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+            </div>
+            <div class="col gap-2 d-sm-flex justify-content-end">
+                <button type="button" class="btn btn-outline-primary btn-dark btn-sm bubbleSort">Bubble Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark btn-sm selectionSort">Selection Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark btn-sm insertionSort">Insertion Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark btn-sm quickSort">Quick Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark btn-sm mergeSort">Merge Sort</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<body class="p-3 mb-2 bg-secondary text-white">
+    
+    <!-- <div id="bars" class="flex-container"></div> -->
+    <section>
+
+        <div id="Info_Cont1">
+            <h3>TIME COMPLEXITY</h3>
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p id="readMore"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bars" class="flex-container"></div>
+    </section>
+    <footer>
+    
+        <p class="footer-title">About Site</p>
+            <p class="info">This Web Application is designed for visualisation purposes of Sorting Algorithms.
+                Sorting Algorithms supported at the moment are: Bubble Sort, Selection Sort, Merge Sort, Quick Sort, Insertion Sort.
+                Dynamic array size for visualisation, Speed control for the Sorting process, button to generate a new randomized array are some of the features of the Web Application.
+
+            </p>
+            </div>
+            <p class="info">Email: ronnierana8@gmail.com</p>
+            <p class="info">Telephone: +91 8954128412</p>
+            <p class="info">Thank You!</p>
+            
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="Sorting/sort.js"></script>
+    <script src="Sorting/bubbleSort.js"></script>
+    <script src="Sorting/insertionSort.js"></script>
+    <script src="Sorting/mergeSort.js"></script>
+    <script src="Sorting/quickSort.js"></script>
+    <script src="Sorting/selectionSort.js"></script>
+</body>
+</html>

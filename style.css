@@ -1,0 +1,117 @@
+* {
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    font-weight: 100;
+    font-style:italic;
+    
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0 20px 30px 0;
+    line-height: 1.4;
+}
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* .navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(12, 14, 55);
+    z-index: 9;
+  }
+  
+  .nav {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+  } */
+
+.flex-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+
+.flex-item{
+    background: #088F8F;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+#input{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 60px;
+    padding-bottom: 80px;
+    background: #28282B;
+  }
+  
+  .footer-title
+  {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+  }
+  .info {
+    text-decoration: solid;
+    color: rgb(255, 255, 255);
+    margin-left: 0;
+    margin-top: 0;
+  }
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
+  }
+  
+  section .Complexity_Containers {
+    margin-top: 5%;
+  }
+  
+  section .Complexity_Containers .Pair_Definitions {
+    margin-top: 5%;
+  }
+  
+  section .Complexity_Containers .Pair_Definitions p {
+    display: inline;
+  }
+  
+  section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+    font-size: medium;
+    text-transform: none;
+  }
+  
+  section #Info_Cont1 {
+    padding: 20% 10%;
+  }
+  
+  section #Info_Cont1 h3 {
+    text-decoration: underline;
+  }
